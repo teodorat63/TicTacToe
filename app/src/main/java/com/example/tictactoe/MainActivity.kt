@@ -108,7 +108,7 @@ fun TTTScreen() {
 
         Board(moves, onTap)
 
-        //COMPUTER MOVE
+        //COMPUTER MOVES
         if (!playerTurn.value && moves.contains(null) && win.value == null) {
             CircularProgressIndicator(modifier = Modifier.padding(16.dp))
 
