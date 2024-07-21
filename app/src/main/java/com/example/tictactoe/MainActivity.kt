@@ -108,14 +108,14 @@ fun TTTScreen() {
 
         Board(moves, onTap)
 
-        //COMPUTER MOVES
+        //COMPUTER MOVE
         if (!playerTurn.value && moves.contains(null) && win.value == null) {
             CircularProgressIndicator(modifier = Modifier.padding(16.dp))
 
 
             val coroutineScope = rememberCoroutineScope()
             LaunchedEffect(key1 = Unit) {
-                delay(1500)
+                delay(1200)
 
                 var random = Random.nextInt(0, 9)
 
